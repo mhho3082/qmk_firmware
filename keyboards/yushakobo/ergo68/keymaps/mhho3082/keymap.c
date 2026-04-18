@@ -25,26 +25,26 @@ KC_SCLN, LALT_T(KC_A), LGUI_T(KC_R), LCTL_T(KC_S),   LSFT_T(KC_T),  KC_G,       
 XXXXXXX, KC_Z,         KC_X,         KC_C,           KC_D,          KC_V,          XXXXXXX, XXXXXXX, KC_K,          KC_H,           KC_COMM,       KC_DOT,       KC_SLSH,      XXXXXXX,
 XXXXXXX, XXXXXXX,      XXXXXXX,      LT(3, KC_CAPS), LT(1, KC_SPC), LT(2, KC_ESC), XXXXXXX, XXXXXXX, LT(2, KC_ENT), LT(1, KC_BSPC), LT(3, KC_DEL), XXXXXXX,      XXXXXXX,      XXXXXXX
     ),
-    // Symbols (Inspired by BEAKL 15)
+    // Number Row and Symbols
     [1] = LAYOUT(
-XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-XXXXXXX, _______, KC_LT,   KC_UNDS, KC_GT,   _______, XXXXXXX, XXXXXXX, _______, KC_LCBR, KC_PLUS, KC_RCBR, _______, XXXXXXX,
-_______, KC_AT,   KC_LPRN, KC_MINS, KC_RPRN, KC_HASH, XXXXXXX, XXXXXXX, KC_ASTR, KC_LBRC, KC_EQL,  KC_RBRC, KC_PIPE, _______,
-XXXXXXX, KC_PERC, KC_CIRC, KC_GRV,  KC_EXLM, _______, XXXXXXX, XXXXXXX, _______, KC_AMPR, KC_TILD, KC_DLR,  KC_BSLS, XXXXXXX,
-XXXXXXX, XXXXXXX, XXXXXXX, _______, _______, _______, XXXXXXX, XXXXXXX, _______, _______, _______, XXXXXXX, XXXXXXX, XXXXXXX
+XXXXXXX, XXXXXXX,      XXXXXXX,      XXXXXXX,      XXXXXXX,      XXXXXXX,                   XXXXXXX, XXXXXXX,      XXXXXXX,      XXXXXXX,      XXXXXXX,      XXXXXXX,
+XXXXXXX, KC_LABK,      KC_LPRN,      KC_UNDS,      KC_RPRN,      KC_RABK, XXXXXXX, XXXXXXX, KC_LCBR, KC_LBRC,      KC_EQL,       KC_RBRC,      KC_RCBR,      XXXXXXX,
+KC_CIRC, LALT_T(KC_1), LGUI_T(KC_2), LCTL_T(KC_3), LSFT_T(KC_4), KC_5,    XXXXXXX, XXXXXXX, KC_6,    RSFT_T(KC_7), RCTL_T(KC_8), RGUI_T(KC_9), RALT_T(KC_0), KC_DLR,
+XXXXXXX, KC_PERC,      KC_AT,        KC_MINS,      KC_EXLM,      KC_HASH, XXXXXXX, XXXXXXX, KC_GRV,  KC_ASTR,      KC_PLUS,      KC_AMPR,      KC_BSLS,      XXXXXXX,
+XXXXXXX, XXXXXXX,      XXXXXXX,      _______,      _______,      _______, XXXXXXX, XXXXXXX, _______, _______,      _______,      XXXXXXX,      XXXXXXX,      XXXXXXX
     ),
-    // Number Pad and Nav (Inspired by Miryoku)
+    // Navigation (Inspired by Miryoku)
     [2] = LAYOUT(
-XXXXXXX, XXXXXXX, XXXXXXX,      XXXXXXX,      XXXXXXX,      XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-XXXXXXX, _______, KC_7,         KC_8,         KC_9,         KC_MINS, XXXXXXX, XXXXXXX, _______, KC_F11,  KC_F12,  _______, _______, XXXXXXX,
-_______, KC_LALT, LGUI_T(KC_4), LCTL_T(KC_5), LSFT_T(KC_6), KC_0,    XXXXXXX, XXXXXXX, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______,
-XXXXXXX, _______, KC_1,         KC_2,         KC_3,         KC_DOT,  XXXXXXX, XXXXXXX, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XXXXXXX,
-XXXXXXX, XXXXXXX, XXXXXXX,      _______,      _______,      _______, XXXXXXX, XXXXXXX, _______, _______, _______, XXXXXXX, XXXXXXX, XXXXXXX
+XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
+XXXXXXX, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   XXXXXXX, XXXXXXX, KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  XXXXXXX,
+_______, KC_LALT, KC_LGUI, KC_LCTL, KC_LSFT, _______, XXXXXXX, XXXXXXX, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______,
+XXXXXXX, _______, _______, KC_F11,  KC_F12,  _______, XXXXXXX, XXXXXXX, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  XXXXXXX,
+XXXXXXX, XXXXXXX, XXXXXXX, _______, _______, _______, XXXXXXX, XXXXXXX, _______, _______, _______, XXXXXXX, XXXXXXX, XXXXXXX
     ),
     // Mouse and Media (Inspired by Miryoku)
     [3] = LAYOUT(
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
-XXXXXXX, QK_BOOT, _______, MS_BTN4, MS_BTN5, _______, XXXXXXX, XXXXXXX, _______, KC_MUTE, KC_VOLD, KC_VOLU, _______, XXXXXXX,
+XXXXXXX, QK_BOOT, _______, MS_BTN4, MS_BTN5, _______, XXXXXXX, XXXXXXX, _______, KC_MPLY, KC_VOLD, KC_VOLU, KC_MUTE, XXXXXXX,
 _______, _______, MS_BTN2, MS_BTN3, MS_BTN1, _______, XXXXXXX, XXXXXXX, _______, MS_LEFT, MS_DOWN, MS_UP,   MS_RGHT, _______,
 XXXXXXX, KC_LALT, KC_LGUI, KC_LCTL, KC_LSFT, _______, XXXXXXX, XXXXXXX, _______, MS_WHLL, MS_WHLD, MS_WHLU, MS_WHLR, XXXXXXX,
 XXXXXXX, XXXXXXX, XXXXXXX, _______, _______, _______, XXXXXXX, XXXXXXX, _______, _______, _______, XXXXXXX, XXXXXXX, XXXXXXX
